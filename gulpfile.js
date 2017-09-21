@@ -14,7 +14,7 @@ var gulp           = require('gulp'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify");
 
-var productname = 'siofor';
+
 
 // Скрипты проекта
 gulp.task('scripts', function() {
@@ -83,6 +83,8 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function() {
 });
 
 // Build for likar.info
+
+var productname = 'siofor';
 
 gulp.task('build-likar', ['removelikar-info', 'sass', 'scripts'], function() {
 
