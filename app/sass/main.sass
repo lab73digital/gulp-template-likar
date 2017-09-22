@@ -1,19 +1,18 @@
 @import "bourbon"
-@import "resetcss"
 @import "fonts"
 @import "libs"
 @import "vars"
 
-body
-    //font-size: 0.8333333333333334vw
-    position: relative
-    //line-height: normal
-    font-family: $f-regular
-    //color: #fff
-    background-color: #000
-    background-repeat: no-repeat
-    background-position: center
-    //padding: 0
+.container
+    @import "resetcss"
+    body
+        //font-size: 0.8333333333333334vw
+        position: relative
+        //line-height: normal
+        font-family: $f-regular
+        background-color: #000
+        background-repeat: no-repeat
+        background-position: center
 
-@import "media"
-// Всегда в конце
+    @import "media"
+
